@@ -1,0 +1,103 @@
+body {
+    background-color: #f2f2f2;;
+}
+
+nav {
+    background-color:  #e75348;
+    color: #fff;
+    position: relative;
+}
+
+ul {
+    position: absolute;
+    right: 5rem;
+}
+
+.navbar-brand {
+    color: #fff;
+    margin-left: 5rem;
+} 
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.nav-item {
+    margin: auto;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.nav-icon {
+    margin-bottom: -0.4rem;
+}
+
+.nav-link, .nav-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.main-container {
+    padding: 3rem 5rem;
+    text-align: center;
+}
+
+/* Left side bar */
+
+.user-img {
+    background-color: #fff;
+    padding: 2%;
+    position: relative;
+}
+
+.user-img img {
+    background-color: #fff;
+    border: 0.3rem solid #e75348;
+    border-radius: 100%;
+    width: 50%;
+}
+
+.user-specs {
+    background-color: #fff;
+}
+
+.posts, .likes, .view-profile {
+    background-color: #fff;
+    margin-top: 0.1rem;
+    padding: 2%;
+}
+
+.view-profile a, .view-profile:hover {
+    color: #e75348;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.popular {
+    background-color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2%;
+}
+
+/* user-contents */
+
+.upload, .user-post {
+    background-color: #fff;
+}
+
+.post-user-image {
+    border: 0.1rem solid #e75348;
+    border-radius: 100%;
+    width: 20%;
+}
+
+.post-text {
+    height: 3rem;
+}
+
+.btn-danger {
+    background-color: #e75348;
+}

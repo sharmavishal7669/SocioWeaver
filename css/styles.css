@@ -1,0 +1,173 @@
+body {
+    background-color: #e75348;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-container {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 40px;
+    max-width: 900px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+}
+
+.left {
+    border-right: 1px solid rgba(0, 0, 0, 0.123);
+    padding-top: 50px;
+}
+
+.login-heading {
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.login-image {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.login-paragraph {
+    color: rgba(0, 0, 0, 0.616);
+    margin: 30px;
+    text-align: left;
+}
+
+.social-accounts-heading {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.right {
+    text-align: left;
+    padding: 0 2rem 2rem 2rem;
+    position: relative;
+}
+
+.form-toggle-btn {
+    position: absolute;
+    right: 60px;
+}
+
+.form-toggle-btn {
+    border: 1px solid #e75348;
+}
+
+.btn {
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+ }
+
+ .b1, .b2 {
+     border-radius: 0;
+ }
+
+ .active, .active:hover {
+    background-color: #e75348;
+    color: #fff;
+ }
+
+ .signup-container {
+     display: none;
+ }
+
+.form-input {
+    height: 40px;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.login-form {
+    padding: 50px 50px 0 50px;
+}
+
+.sign-in-text {
+    font-size: 1.5rem;
+}
+
+.login-hr {
+    margin-top: 0;
+    opacity: 1;
+    width: 40px;
+}
+
+.forgot-password-link {
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.sign-in-button {
+    background-color: #e75348;
+    color: #fff;
+    margin-top: 20px;
+    width: 90px;
+}
+
+.sign-up-button {
+    background-color: #e75348;
+    color: #fff;
+    margin-top: 20px;
+    width: 110px;
+}
+
+.other-login-options {
+    text-align: center;
+    padding: 50px 50px 0 50px;
+}
+
+.social-connect-button, .social-connect-button:hover {
+    color: #fff;
+    margin: 10px 0;
+    width: 100%;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #e75348;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 3rem 3rem 0;
+    text-align: center;
+}
+
+.footer ul li{
+    border-right: 1px solid #fff;
+    display: inline;
+    padding: 0 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 786px) {
+    .main-container {
+        width: 90%;
+    }
+
+    .login-image {
+        display: none;
+    }
+
+    .left {
+        border-style: none;
+    }
+
+    .login-paragraph {
+        text-align: center;
+        margin-top: 0;
+    }
+}
