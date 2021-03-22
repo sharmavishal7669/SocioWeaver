@@ -52,9 +52,66 @@
                     </div>
                 </div>
                 <div class="row user-post">
-                    <?php $post = new Post($con, $userLoggedIn);
-                    $post->loadPostsFriends(); ?>
+
+                    <div class="posts_area"></div>
+
+                    <img id="loading" src="assets/images/icons/loading.gif">
+
                 </div>
+
+                <script>
+                var userLoggedIn = '<?php echo $userLoggedIn; ?>';
+
+                $(document).ready(function() {
+
+                    $('#loading').show();
+
+                    //Original ajax request for loading first posts
+                    $.ajax({
+                        url: "includes/handlers/ajax_load_posts.php",
+                        type: "POST",
+                        data: "page=1&userLoggedIn=" + userLoggedIn,
+                        cache: false,
+
+                        success: function(data) {
+                            $('#loading').hide();
+                            $('.posts_area').html(data);
+                        }
+                    });
+
+                    $(window).scroll(function(){
+                        var height = $('.posts_area').height(); //div containing posts
+                        var scroll_top = $(this).scrollTop();
+                        var page = $('.posts_area').find('.nextPage').val();
+                        var noMorePosts = $('.posts_area').find('.noMorePosts').val();
+
+                        if((document.body.scrollHeight == document.documentElement.scrollTop + window.innerHeight) && noMorePosts == 'false'){
+                            $('#loading').show();
+
+                             var ajaxReq = $.ajax({
+                                url: "includes/handlers/ajax_load_posts.php",
+                                type: "POST",
+                                data: "page=" + page + "&userLoggedIn=" + userLoggedIn,
+                                cache: false,
+
+                                success: function(response) {
+                                    $('.posts_area').find('.nextPage').remove(); //remove current .nextpage
+                                    $('.posts_area').find('.noMorePosts').remove(); //remove current .nextpage
+
+                                    $('#loading').hide();
+                                    $('.posts_area').append(response);
+                                }
+                            });
+                            
+                        } //End if
+
+                        return false;
+
+                    }); //End (window).scroll(function())
+                });
+
+                </script>
+
             </div>
         </div>
     </div>
@@ -69,7 +126,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap JS + Pooper-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -101,3 +101,9 @@ ul {
 .btn-danger {
     background-color: #e75348;
 }
+
+#loading {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
