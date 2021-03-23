@@ -37,7 +37,7 @@
         <div class="row">
             <div class="left col-sm-12 col-md-6">
                 <h2 class="login-heading">SocioWeave</h2>
-                <p class="login-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="login-paragraph">SocioWeave, is a social media platform where students can interact, make friends or can share stuff among them.</p>
                 <img class="login-image" src="assets/images/cm-main-img.png" alt="gadgets-image">
             </div>
             <div class="right col">
