@@ -125,3 +125,6 @@ ul {
     background-color: #e75348;
     color: #fff;
 }
+.logout-link:hover{
+    background-color: #fff;
+}

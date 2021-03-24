@@ -53,7 +53,7 @@
                         <a class="dropdown-item" href="#">FAQs</a>
                         <a class="dropdown-item" href="#">Terms & Conditions</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-center " href="includes/handlers/logout.php"><h6 class="dropdown-header logout-tab" >Logout</h6></a>
+                        <a class="dropdown-item text-center logout-link " href="includes/handlers/logout.php"><h6 class="dropdown-header logout-tab" >Logout</h6></a>
                     </div>
                 </div>
 
