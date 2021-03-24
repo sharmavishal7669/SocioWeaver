@@ -3,7 +3,7 @@
 if(isset($_POST['signInButton'])) {
 
 	$email = filter_var($_POST['loginEmail'], FILTER_SANITIZE_EMAIL); //sanitize email
- 
+	
 	$password = md5($_POST['loginPassword']); //Get password
 	$check_database_query = mysqli_query($con, "SELECT * FROM users WHERE email='$email' AND password='$password'");
 	$check_login_query = mysqli_num_rows($check_database_query);

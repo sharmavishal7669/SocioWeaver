@@ -107,3 +107,16 @@ ul {
     margin-right: auto;
     width: 10%;
 }
+
+/* Navbar dropdown  */
+.dropbtn {
+    background-color: #e75348;
+    color: white;
+    border: none;
+}
+
+.dropdown-menu {
+    position: relative;
+    right: 1px;
+    top: 50px;
+}

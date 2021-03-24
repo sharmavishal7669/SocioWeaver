@@ -84,7 +84,7 @@
                         var scroll_top = $(this).scrollTop();
                         var page = $('.posts_area').find('.nextPage').val();
                         var noMorePosts = $('.posts_area').find('.noMorePosts').val();
-
+                        
                         if((document.body.scrollHeight == document.documentElement.scrollTop + window.innerHeight) && noMorePosts == 'false'){
                             $('#loading').show();
 
