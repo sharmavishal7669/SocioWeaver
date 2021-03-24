@@ -120,3 +120,11 @@ ul {
     right: 1px;
     top: 50px;
 }
+
+.logout-tab:hover {
+    background-color: #e75348;
+    color: #fff;
+}
+.logout-link:hover{
+    background-color: #fff;
+}

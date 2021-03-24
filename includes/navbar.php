@@ -31,29 +31,7 @@
                 Friends</a>
             </li>
 
-            <!-- <li class="nav-item dropdown">
-                <div class="btn-group dropleft">
-                    <button class="dropbtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div style="position:relative;"> <div class="nav-icon"><i class="fas fa-user"></i></div>
-                        <?php echo $user['first_name']; ?> </div>
-                    </button>
-                    <div class="dropdown-menu">
-                        <h6 class="dropdown-header">Profile</h6>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">View Profile</a>
-                        <div class="dropdown-divider"></div>
-                        <h6 class="dropdown-header">Settings</h6>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Account setting</a>
-                        <a class="dropdown-item" href="#">Privacy</a>
-                        <a class="dropdown-item" href="#">FAQs</a>
-                        <a class="dropdown-item" href="#">Terms & Conditions</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-center" href="includes/handlers/logout.php"><h6 class="dropdown-headerr">Logout</h6></a>
-                    </div>
-                </div>
-
-            </li> -->
+           
         </ul>
         
     </div>
@@ -65,8 +43,7 @@
                         <?php echo $user['first_name']; ?> </div>
                     </button>
                     <div class="dropdown-menu">
-                        <h6 class="dropdown-header">Profile</h6>
-                        <div class="dropdown-divider"></div>
+                        
                         <a class="dropdown-item" href="#">View Profile</a>
                         <div class="dropdown-divider"></div>
                         <h6 class="dropdown-header">Settings</h6>
@@ -76,7 +53,7 @@
                         <a class="dropdown-item" href="#">FAQs</a>
                         <a class="dropdown-item" href="#">Terms & Conditions</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-center" href="includes/handlers/logout.php"><h6 class="dropdown-headerr">Logout</h6></a>
+                        <a class="dropdown-item text-center logout-link " href="includes/handlers/logout.php"><h6 class="dropdown-header logout-tab" >Logout</h6></a>
                     </div>
                 </div>
 
